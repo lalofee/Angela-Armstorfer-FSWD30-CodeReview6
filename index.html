@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+   	<style>
+   		body {
+   			background-color:rgb(241, 203, 208);
+   		}
+   		#logo {
+   			padding-top: 0;
+   		}
+   		#book_heading {
+   			color: rgb(241, 203, 208);
+   		}
+   		#music_heading {
+   			color: rgb(65, 105, 103);
+   		}
+   		#film_heading {
+   			color: rgb(241, 203, 208);
+   		}
+   		h4 {
+   			color:rgb(65, 105, 103);
+   		}
+   		p {
+   			color: black;
+   		}
+   		#nav {
+   			background-color:rgb(241, 203, 208);
+   		}
+   		#books  {
+   			background-color:rgb(65, 105, 103);
+   		}
+   		#music {
+   			background-color:rgb(166, 103, 110);
+   		}
+      #film  {
+        background-color:rgb(65, 105, 103);
+      }
+   		
+   	</style>
+
+    <title>mediathek</title>
+  </head>
+  <body>
+  	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+
+    
+
+    <nav class="navbar navbar-default">
+      <div id="nav" class="container-fluid">
+      
+      <!-- NAVBAR HEADER:   Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      
+      <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png" alt="logo"></a>
+    </div>
+      <!-- end navbar header-->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--END OF TOP NAVBAR --> 
+    
+<!--Start of Mediathek, content comes from javascript-->
+<div id="wrapper" class="container">
+		
+  <h1 id="book_heading" class="col-md-6">Meine Bücher</h1>
+  <div class="row" id="books">
+  </div>
+
+  <h1 id="music_heading" class="col-md-6">Meine Musik</h1>
+  <div class="row" id="music">
+  </div>
+
+  <h1 id="film_heading" class="col-md-6">Meine Filme</h1>
+  <div class="row" id="film">
+  </div>
+
+</div>
+
+
+<script src="js/script.js"></script>	
+
+</body>
+
+</html>
+
+
+<!--
+<h1 id="music_heading" class="col-md-6">Meine Musik</h1>
+
+<div id="row_3" class="row">
+  <div class="col-lg-2">
+    <div class="thumbnail">
+      <img src="img/bjoerk.jpg" alt="Responsive image">
+      <div class="caption">
+        <h4>Björk</h4>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-2 col-md-4">
+    <div class="thumbnail">
+      <img src="img/clash.jpg" alt="Responsive image">
+      <div class="caption">
+        <h4>The Clash</h4>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-2 col-md-4">
+    <div class="thumbnail">
+      <img src="img/morcheeba.jpg" alt="Responsive image">
+      <div class="caption">
+        <h4>Morcheeba</h4>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="row_4" class="row">
+  <div class="col-lg-2 col-md-4">
+    <div class="thumbnail">
+      <img src="img/neubauten.jpg" alt="Responsive image">
+      <div class="caption">
+        <h4>Einstürzende Neubauten</h4>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-2 col-md-4">
+    <div class="thumbnail">
+      <img src="img/police.jpg" alt="Responsive image">
+      <div class="caption">
+        <h4>The Police</h4>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-2 col-md-4">
+    <div class="thumbnail">
+      <img src="img/tricky.jpg" alt="Responsive image">
+      <div class="caption">
+        <h4>Tricky</h4>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<h1 id="film_heading" class="col-md-6">Meine Filme</h1>
+
+<div id="row_5" class="row">
+  <div class="col-lg-2 col-md-4">
+    <div class="thumbnail">
+      <img src="img/budapest.jpg" alt="Responsive image">
+      <div class="caption">
+        <h4>The Grand Hotel Budapest</h4>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-2 col-md-4">
+    <div class="thumbnail">
+      <img src="img/onlylovers.jpg" alt="Responsive image">
+      <div class="caption">
+        <h4>Only Lovers Left Alive</h4>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-2 col-md-4">
+    <div class="thumbnail">
+      <img src="img/stranger.jpg" alt="Responsive image">
+      <div class="caption">
+        <h4>Stranger Than Paradise</h4>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="row_6" class="row">
+  <div class="col-lg-2 col-md-4">
+    <div class="thumbnail">
+      <img src="img/trainspotting.jpg" alt="Responsive image">
+      <div class="caption">
+        <h4>Trainspotting</h4>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-2 col-md-4">
+    <div class="thumbnail">
+      <img src="img/wild.jpg" alt="Responsive image">
+      <div class="caption">
+        <h4>Wild At Heart</h4>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-2 col-md-4">
+    <div class="thumbnail">
+      <img src="img/bluevelvet.jpg" alt="Responsive image">
+      <div class="caption">
+        <h4>Blue Velvet</h4>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+-->

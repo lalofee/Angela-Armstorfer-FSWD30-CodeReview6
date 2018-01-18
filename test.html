@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+    
+    <title>TEST_mediathek</title>
+</head>
+
+<body>
+  	
+
+  <div id="media1">
+    
+        <h4 class="title"></h4>
+        <p>
+        	<span class="author">Author: </span><br>
+        	<span class="genre">Genre: </span><br>
+        	<span class="publisher">Publisher: </span><br>
+        	<span class="rating">Rating: </span>
+        </p>
+      </div>
+ 
+
+
+      
+<script>
+
+
+
+class Media {
+	constructor(title, author, genre, publisher, rating) {
+			this.title = title;
+			this.author = author;
+			this.genre = genre;
+			this.publisher = publisher;
+   			this.rating = rating;  
+   	}
+   	
+};    
+
+var media = [ new Media (
+	
+	"Malina",
+	"Ingeborg Bachmann",
+	"Books",
+	"Suhrkamp Verlag",
+	"4"
+	),
+new Media(
+	
+	"Das andere Geschlecht",
+	"Simone de Beauvoir",
+	"Books",
+	"Suhrkamp Verlag",
+	"5"
+	),
+new Media(
+	
+	"Holzfällen",
+	"Thomas Bernhard",
+	"Books",
+	"Suhrkamp Verlag",
+	"4"
+	),
+new Media(
+	
+	"Biedermann und die Brandstifter",
+	"Max Frisch",
+	"Books",
+	"Suhrkamp Verlag",
+	"3"
+	),
+new Media(
+	
+	"Tiere Denken",
+	"Richard David Precht",
+	"Books",
+	"Goldmann",
+	"5"
+	),
+new Media(
+	
+	"Winters Garten",
+	"Valerie Fritsch",
+	"Books",
+	"Suhrkamp Verlag",
+	"5"
+	)
+];
+
+
+// function to insert content
+
+function insertContent() {
+	 
+	 $("#media1 .title").append("Malina");
+     $("#media1 .author").append(this.author);
+     $("#media1 .genre").append(this.genre);
+     $("#media1 .publisher").append(this.publisher);
+     $("#media1 .rating").append(this.rating);
+};
+
+
+	 
+	 
+
+
+for (var i = 0; i < media.length; i++) {
+	media[i].insertContent();
+}
+
+
+
+//$("#media1 img").append(img/fritsch.jpg);
+
+
+/*var mediathek = [
+
+new Media (
+	"img/bachmann.jpg"
+	"Malina",
+	"Ingeborg Bachmann",
+	"Books",
+	"Suhrkamp Verlag",
+	"4"
+	),
+new Media(
+	"img/beauvoir.jpg"
+	"Das andere Geschlecht",
+	"Simone de Beauvoir",
+	"Books",
+	"Suhrkamp Verlag",
+	"5"
+	),
+new Media(
+	"img/bernhard.jpg"
+	"Holzfällen",
+	"Thomas Bernhard",
+	"Books",
+	"Suhrkamp Verlag",
+	"4"
+	),
+new Media(
+	"img/frisch.jpg"
+	"Biedermann und die Brandstifter",
+	"Max Frisch",
+	"Books",
+	"Suhrkamp Verlag",
+	"3"
+	),
+new Media(
+	"img/precht.jpg"
+	"Tiere Denken",
+	"Richard David Precht",
+	"Books",
+	"Goldmann",
+	"5"
+	),
+new Media(
+	"img/fritsch.jpg"
+	"Winters Garten",
+	"Valerie Fritsch",
+	"Books",
+	"Suhrkamp Verlag",
+	"5"
+	)
+];
+/*
+for (var i = 0; i < Media.length; i++) {
+	console.log(Media[i]);
+}
+
+
+var media1 =  {
+			title: 'Malina',
+			author: 'Ingeborg Bachmann',
+			genre: 'Books'
+			publisher: 'Suhrkamp Verlag',
+   			image: "img/bachmann.jpg",	
+			rating: 4    
+};
+*/
+	
+	
+</script>
+
+</body>
+</html>
